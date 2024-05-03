@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us-Marinduque State College</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<script type="text/javascript">
+		function changeColor(){
+			let color = document.getElementById('BGColor');
+			document.body.style.backgroundColor = color.value;
+		}
+		function changeText(){
+			let text = prompt("Enter a Text:");
+			if(text == null || text == ""){
+				alert("Input Required!");
+			}else{
+				document.getElementById('toChangeText').innerHTML = text;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<img src="../images/logo.png">
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="">Campuses</a></li>
+				<li><a href="">Schools</a></li>
+				<li><a href="">Courses</a></li>
+				<li><a href="contacts.html" class="active">Contacts</a></li>
+			</ul>
+		</div>
+		<div class="banner">
+			<img src="../images/NLM-COVER-PHOTO.png">
+		</div>
+		<div class="main">
+			<div class="content-contact">
+				<h1 id="toChangeText" onclick="changeText()">Contact Us</h1>
+				<h2>Contact Form</h2>
+				<p>Please use this form to send us your questions and inquiry. </p>
+
+				<form name="contactForm" method="" action="">
+					<label>Name:</label><br>
+					<input type="text" name="txtName" id="txtName" placeholder="Enter Your Name" required><br><br>
+					<label>Email:</label><br>
+					<input type="email" name="txtEmail" id="txtEmail" required placeholder="Enter Your Email"><br><br>
+
+					<label>Contact Number:</label><br>
+					<input type="tel" name="txtCNumber" id="txtCNumber" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX"><br><br>
+
+					<label>Age:</label><br>
+					<input type="number" name="txtAge" id="txtAge"><br><br>
+
+					<label>Birthday:</label><br>
+					<input type="date" name="txtBday" id="txtBday"><br><br>
+
+					<label>Time of Birth:</label><br>
+					<input type="time" name="txtTime" id="txtTime"><br><br>
+
+					<label>Sex:</label><br>
+					<input type="radio" name="rdSex" id="rdSex"><label>Male</label><br>
+					<input type="radio" name="rdSex" id="rdSex"><label>Female</label><br><br>
+
+					<label>Devices Used:</label><br>
+					<input type="checkbox" name="chkPC" id="chkPC"><label>Personal Computer</label><br>
+					<input type="checkbox" name="chkSP" id="chkSP"><label>Smartphone</label><br>
+					<input type="checkbox" name="chkLP" id="chkLP"><label>Laptop</label><br>
+					<input type="checkbox" name="chkTL" id="chkTL"><label>Tablet</label><br><br>
+
+					<label>Network Provider:</label><br>
+					<select name="sltNetPro">
+						<option value="Globe Telecom">Globe Telecom</option>
+						<option value="Smart Inc.">Smart Inc.</option>
+						<option value="">Dito Telecom</option>
+						<option value="Dito Telecom">Converge</option>
+						<option value="StarLink">StarLink</option>
+					</select><br><br>
+
+					<label>Backgroud Color:</label>
+					<input type="color" name="BGColor" id="BGColor" onchange="changeColor()"><br><br>
+
+					<button type="submit">SEND</button>
+					<button type="reset">CLEAR</button>
+				</form>
+			</div>
+			<div class="right-side-bar">
+				<ul>
+					<li><img src="../images/side-bars/w0.png"></li>
+					<li><img src="../images/side-bars/w1.png"></li>
+					<li><img src="../images/side-bars/w2.png"></li>
+					<li><img src="../images/side-bars/w3.png"></li>
+					<li><img src="../images/side-bars/w4.png"></li>
+					<li><img src="../images/side-bars/w5.png"></li>
+				</ul>
+			</div>
+			<div class="footer">
+				<p>&copy; 2024 Marinduque State College <br> Panfilo M. Manguera Sr. Road, Tanza, Boac, Marinduque - Philippines <br> Tel No. (042) 332-2028/2728. All Rights Reserved.</p>
+
+				<a href="https://www.facebook.com"><img src="../images/icons/facebook.png"></a>
+				<a href="https://www.youtube.com"><img src="../images/icons/youtube.png"></a>
+				<a href="https://www.x.com"><img src="../images/icons/twitter.png"></a>
+				<a href="https://www.rss.com"><img src="images/icons/rss.png"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
